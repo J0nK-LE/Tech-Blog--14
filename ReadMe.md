@@ -4,7 +4,11 @@
 ## About The Project
 A tech blog created using MVC architecture. Users can leave main comments as well as leave child comments on posts made by others. Also allows for new users to be created. so log in and start talking tech.
 
-Link to repo - [https://github.com/J0nK-LE/challenge14](https://github.com/J0nK-LE/challenge14)
+-- Had some github issues with the final edits and readme not pushing to get so there are now 2 repos. Tech Blog 14 holds the final completed code and readme, while challenge 14 hold all the commits made to get to that point --
+
+Link to completed repo - [https://github.com/J0nK-LE/Tech-Blog--14](https://github.com/J0nK-LE/Tech-Blog--14)
+
+Link to repo that was worked on - [https://github.com/J0nK-LE/challenge14](https://github.com/J0nK-LE/challenge14)
 
 Link to deployed  - [https://secret-springs-52088.herokuapp.com/](https://secret-springs-52088.herokuapp.com/)
 
