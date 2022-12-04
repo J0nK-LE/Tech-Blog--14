@@ -1,0 +1,120 @@
+{{#if comment1}}
+  <div class='card mb-4'>
+    <div class='row title'>
+      <h2 class='titleText'>
+        {{comment1.title}}
+      </h2>
+      <p class='userText text-center'>Created by
+        {{comment1.user.name}}
+        on
+        {{format_date comment1.date_created}}</p>
+    </div>
+    <div class='comment'>
+      <textarea
+        id='{{comment1.id}}'
+        value='{{comment1.comment}}'
+        placeholder='{{comment1.comment}}'
+        class='commentText'
+        rows='4'
+        cols='100'
+      >
+        {{comment1.comment}}
+      </textarea>
+    </div>
+
+    <div class='flex-column'>
+      <button class='btn deleteBtn' data-id='{{comment1.id}}'>DELETE</button>
+      <button
+        class='btn updateBtn mt-3'
+        data-id='{{comment1.id}}'
+      >UPDATE</button>
+    </div>
+{{#each comment1.children as |child|}}
+ <div>
+  <div class='row title'>
+    <p class='userText text-center'>Created by
+      {{child.user.name}}
+      on
+      {{format_date child.date_created}}</p>
+  </div>
+  <div class='comment'>
+    <p>
+      {{child.child}}
+    </p>
+  </div>
+      {{/each}}
+  </div>
+{{/if}}
+{{#if comment2}}
+<div class='card'>
+  <div class='row title'>
+    <h2 class='titleText'>
+      {{comment2.title}}
+    </h2>
+    <p class='userText text-center'>Created by
+      {{comment2.user.name}}
+      on
+      {{format_date comment2.date_created}}</p>
+  </div>
+  <div class='comment'>
+    <p
+      id='{{comment2.id}}'
+      value='{{comment2.comment}}'
+      placeholder='{{comment2.comment}}'
+      class='commentText'
+      rows='4'
+      cols='100'
+    >
+      {{comment2.comment}}
+    </p>
+  </div>
+  <div class='flex-column'>
+    <button class='hide btn deleteBtn' data-id='{{comment1.id}}'>DELETE</button>
+      <button
+        class='hide btn updateBtn mt-3'
+        data-id='{{comment1.id}}'
+      >UPDATE</button>
+    <button
+      class='btn newChildBtn mt-3'
+      data-id='{{comment2.id}}'
+      type="button"
+    >COMMENT</button>
+    <div id="addComment" class='hide row mt-4'>
+  <div class='col-md-6 card'>
+      <form  data-id='{{comment2.id}}' class='form new-child-form'>
+      <div class='form-group'>
+        <label for='child-child'>Content:</label>
+        <textarea
+          class='form-input'
+          id='child-child'
+          name='child-child'
+        ></textarea>
+      </div>
+      <div class='form-group'>
+        <button type='submit'
+ class='btn btn-primary'>Create</button> 
+      </div>
+    </form>
+  </div>
+</div>
+  </div>
+  {{#each comment2.children as |child|}}
+ <div>
+  <div class='row title'>
+    <p class='userText text-center'>Created by
+      {{child.user.name}}
+      on
+      {{format_date child.date_created}}</p>
+  </div>
+  <div class='comment'>
+    <p>
+      {{child.child}}
+    </p>
+  </div>
+      {{/each}}
+    </div>
+
+</div>
+{{/if}}
+
+<script src='../js/comment.js'></script>
