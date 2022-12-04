@@ -8,7 +8,7 @@ Link to repo - [https://github.com/J0nK-LE/challenge14](https://github.com/J0nK-
 
 Link to deployed  - [https://secret-springs-52088.herokuapp.com/](https://secret-springs-52088.herokuapp.com/)
 
-![site screenshot](../../../../../C:/Users/Jon%20Kelly/repos/challenge14/assets/secret-springs-52088.herokuapp.com_.png)
+![Alt text](assets/secret-springs-52088.herokuapp.com_.png)
 
 [![License][ISC-bdg]][ISC-url]</div>
 
@@ -23,7 +23,7 @@ Link to deployed  - [https://secret-springs-52088.herokuapp.com/](https://secret
      </ol>
 
 ## Installation
-nothing is needed when using the deployed link, but in order to get the code running, put "npm start" in the terminal at the root and then go to "http://localhost:3001/" in our browser
+nothing is needed when using the deployed link, but in order to get the code running, put "npm start" in the terminal at the root and then go to "http://localhost:3001/" in our browser. Don't forget to fill out the ENV with your SQL info and delete ".EXAMPLE" from the title.
 ## Usage
 to talk tech
 ## License
